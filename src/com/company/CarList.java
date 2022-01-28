@@ -39,10 +39,11 @@ public class CarList {
     }
 
     // delete element from first
-    public void deleteFirst(){
+    public Node deleteFirst(){
         //Checks whether list is empty
         if(isEmpty()){
             System.out.println("Empty");
+            return head;
         }else {
             // get temporary head
             Node tempHead = head;
@@ -50,7 +51,7 @@ public class CarList {
             head = head.getNext();
             // set temporary head become null
             tempHead.setNext(null);
-
+            return tempHead;
         }
     }
 
