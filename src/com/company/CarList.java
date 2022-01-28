@@ -42,7 +42,7 @@ public class CarList {
     public void deleteFirst(){
         //Checks whether list is empty
         if(isEmpty()){
-            System.out.println("Linked list is empty");
+            System.out.println("Empty");
         }else {
             // get temporary head
             Node tempHead = head;
@@ -58,10 +58,10 @@ public class CarList {
     public void displayFirst(){
         //Checks whether list is empty
         if(isEmpty()){
-            System.out.println("Linked list is empty");
+            System.out.println("Empty");
         }else {
             // get head or first value and display
-            System.out.println("First - "+head.getValue());
+            System.out.println(head.getValue());
         }
     }
 
@@ -95,7 +95,7 @@ public class CarList {
     public void deleteLast(){
         //Checks whether list is empty
         if(isEmpty()){
-            System.out.println("Linked list is empty");
+            System.out.println("Empty");
         }else {
             //Checks whether the list contains only one node
             if(head != tail){
@@ -115,10 +115,10 @@ public class CarList {
     public void displayLast(){
         //Checks whether list is empty
         if(isEmpty()){
-            System.out.println("Linked list is empty");
+            System.out.println("Empty");
         }else {
             // get tail or last value and display
-            System.out.println("Last - "+tail.getValue());
+            System.out.println(tail.getValue());
         }
 
     }
@@ -132,7 +132,7 @@ public class CarList {
     public void display(){
         //Checks whether list is empty
         if(isEmpty()){
-            System.out.println("Linked list is empty");
+            System.out.println("Empty");
         }
         //get current head
         Node current = head;
@@ -149,7 +149,7 @@ public class CarList {
     public void displayReverse(){
         //Checks whether list is empty
         if(isEmpty()){
-            System.out.println("Linked list is empty");
+            System.out.println("Empty");
         }
         // get current tail
         Node current = tail;
@@ -162,6 +162,4 @@ public class CarList {
             current = current.getPrevious();
         }
     }
-
-
 }
