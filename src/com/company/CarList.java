@@ -9,8 +9,8 @@ public class CarList {
 
     //Doubly Linked List
 
-    Node head;
-    Node tail;
+    Node head;//point to starting node
+    Node tail;//point to ending node
 
     // Initialize head and tail to null
     public CarList(){
@@ -97,6 +97,7 @@ public class CarList {
         //Checks whether list is empty
         if(isEmpty()){
             System.out.println("Empty");
+
         }else {
             //Checks whether the list contains only one node
             if(head != tail){
@@ -109,7 +110,9 @@ public class CarList {
                 Then it will remove node and now both head and tail will point to null  */
                 head = tail =null;
             }
+
         }
+
     }
 
     //display last element

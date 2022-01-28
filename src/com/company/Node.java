@@ -8,10 +8,11 @@ package com.company;
 
 public class Node {
 
-    private Node next;
-    private Node previous;
-    private Car value;
+    private Node next; // point to next node
+    private Node previous; // point to previous node
+    private Car value; // inserting value
 
+    //Initialize new node
     public Node(Car car){
         next = null;
         previous = null;

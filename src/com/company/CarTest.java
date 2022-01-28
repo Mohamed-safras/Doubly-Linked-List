@@ -1,48 +1,39 @@
 package com.company;
-
 /*
  * ICT/19/858
  * MOHAMED SAFRAS
  * DATA STRUCTURE AND ALGORITHMS
  * */
 
-
-
 public class CarTest {
 
     public static void main(String[] args) {
+        System.out.println("----------- For stack ----------\n");
+        CarStack carStack = new CarStack();
 
-        CarQueue queue = new CarQueue();
+        carStack.push(new Car(1));
+        carStack.push(new Car(2));
+        carStack.push(new Car(3));
+        carStack.push(new Car(4));
+        carStack.push(new Car(5));
 
-        queue.insert(new Car(1));
-        queue.insert(new Car(2));
-        queue.insert(new Car(3));
-        queue.insert(new Car(4));
-        System.out.println("------------------------------");
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.remove();
+        carStack.pop();
+        carStack.pop();
+        carStack.pop();
+        carStack.pop();
+        carStack.pop();
 
-        System.out.println("------------------------------");
-        queue.insert(new Car(1));
-        queue.insert(new Car(2));
-        queue.insert(new Car(3));
-        queue.insert(new Car(4));
-        System.out.println("------------------------------");
+        carStack.peek();
 
-        System.out.println("------------------------------");
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.remove();
-        queue.insert(new Car(1));
-        queue.insert(new Car(2));
-        queue.peek();
+        System.out.println("\n----------- For Queues ----------\n");
+
+        CarQueue carQueue = new CarQueue();
+
+        carQueue.insert(new Car(1));
+        carQueue.insert(new Car(2));
+        carQueue.remove();
+        carQueue.remove();
+        carQueue.remove();
+        carQueue.peek();
     }
-
 }
